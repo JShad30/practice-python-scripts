@@ -10,13 +10,12 @@ def fruit_and_veg():
     
     first_name = input("Type your first name: ")
     last_name = input("Type your last name: ")
+    f = open("fruitnames.txt", "a")
     if score >= 5:
         print("Well done {}. You've eaten {} fruits today which is very good! Well done keep it up!".format(first_name, str(score)))
-        f = open("fruitnames.txt", "a")
         f.write("\n" + first_name + " " + last_name + ": " + str(score) + " fruits eaten today. Very good!")
     else:
         print("Sorry {}, you've only eaten {} fruits today. That's not your 5 a day... very naughty!".format(first_name, str(score)))
-        f = open("fruitnames.txt", "a")
         f.write("\n" + first_name + " " + last_name + ": " + str(score) + " fruits eaten today. Keep an eye on them!!")
         
 fruit_and_veg()
