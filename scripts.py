@@ -31,7 +31,7 @@ fruits = ["apple", "banana", "strawberry"]
 
 def juicy():
     for fruit in fruits:
-        print fruit
+        print(fruit)
         
 juicy()
     
